@@ -1,4 +1,4 @@
-# 📱 Offline Expense Tracker
+# 📱 Expense Tracker
 
 A modern, clean, and fully offline mobile expense tracker built with Flutter. Perfect for college projects and internship demonstrations.
 
