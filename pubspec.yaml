@@ -1,0 +1,58 @@
+name: expense_tracker
+description: A simple offline expense tracker app built with Flutter
+
+# Prevent publishing to pub.dev
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # SQLite database for local storage
+  sqflite: ^2.3.0
+  
+  # Path provider for getting device paths
+  path: ^1.8.3
+  
+  # Date formatting utilities
+  intl: ^0.18.1
+
+  # State management
+  provider: ^6.1.1
+
+  # Local storage for preferences
+  shared_preferences: ^2.2.2
+
+  # Charts and analytics
+  fl_chart: ^0.66.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Linting rules
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/icon/app_icon.png"
+  adaptive_icon_background: "#0F766E"
+  adaptive_icon_foreground: "assets/icon/app_icon.png"
+
+flutter:
+  uses-material-design: true
+
+  # Uncomment to add custom fonts
+  # fonts:
+  #   - family: Poppins
+  #     fonts:
+  #       - asset: fonts/Poppins-Regular.ttf
+  #       - asset: fonts/Poppins-Bold.ttf
+  #         weight: 700
