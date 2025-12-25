@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:provider/provider.dart';
 import 'screens/home_screen.dart';
 import 'utils/constants.dart';
-import 'utils/theme_provider.dart';
 
 void main() {
   // Ensure Flutter is initialized
@@ -15,12 +13,7 @@ void main() {
     DeviceOrientation.portraitDown,
   ]);
 
-  runApp(
-    ChangeNotifierProvider(
-      create: (_) => ThemeProvider(),
-      child: const MyApp(),
-    ),
-  );
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -178,17 +171,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Consumer<ThemeProvider>(
-      builder: (context, themeProvider, child) {
-        return MaterialApp(
-          title: 'Expense Tracker',
-          debugShowCheckedModeBanner: false,
-          theme: _buildLightTheme(),
-          darkTheme: _buildDarkTheme(),
-          themeMode: themeProvider.isDarkMode ? ThemeMode.dark : ThemeMode.light,
-          home: const HomeScreen(),
-        );
-      },
+    return MaterialApp(
+      title: 'Expense Tracker',
+      debugShowCheckedModeBanner: false,
+      theme: _buildLightTheme(),
+      home: const HomeScreen(),
     );
   }
 }

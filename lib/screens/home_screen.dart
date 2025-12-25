@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 import '../services/expense_service.dart';
 import '../utils/constants.dart';
 import '../utils/format_utils.dart';
-import '../utils/theme_provider.dart';
 import 'add_expense_screen.dart';
 import 'view_expenses_screen.dart';
 import 'summary_screen.dart';
@@ -181,7 +179,6 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final isDarkMode = context.watch<ThemeProvider>().isDarkMode;
     final theme = Theme.of(context);
     
     return Scaffold(
@@ -204,16 +201,6 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             tooltip: 'Clear All Expenses',
             onPressed: _clearAllExpenses,
-          ),
-          IconButton(
-            icon: Icon(
-              isDarkMode ? Icons.light_mode : Icons.dark_mode,
-              color: Colors.white,
-            ),
-            tooltip: isDarkMode ? 'Light Mode' : 'Dark Mode',
-            onPressed: () {
-              context.read<ThemeProvider>().toggleTheme();
-            },
           ),
         ],
       ),

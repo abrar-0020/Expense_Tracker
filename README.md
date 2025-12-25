@@ -6,6 +6,12 @@ A modern, clean, and fully offline mobile expense tracker built with Flutter. Pe
 ![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
 
+## 📥 Download
+
+**[📲 Download APK](https://drive.google.com/file/d/1SQ4o6oeKhaAQ-Arz2D0Xi3tfniNa7eG_/view?usp=drivesdk)** - Direct download for Android
+
+> **Note:** For first-time installation, you may need to enable "Install from Unknown Sources" in your Android settings.
+
 ## ✨ Features
 
 - **100% Offline** - No internet required, all data stored locally
@@ -264,7 +270,7 @@ This project is created for educational purposes and is free to use.
 
 ## 👨‍💻 Author
 
-Created as a demonstration of Flutter development skills
+Created as a demonstration of Flutter development skillsA feature-rich Flutter expense tracking app with budget management, analytics charts, calculator, search & sort. Offline-first with SQLite storage. 💰📊
 
 ## 🔮 Future Enhancements
 
